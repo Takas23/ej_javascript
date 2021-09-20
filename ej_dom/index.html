@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="parpadeo()">
+    <div>
+        
+    </div>
+
+
+<script>   
+    var div1 = document.querySelector("div");
+/*
+    div1.style.height="100px"
+    div1.style.width="200px"
+    div1.style.backgroundColor="blue"
+*/
+    div1.classList.add("square");
+
+    function cambio(){
+        div1.classList.toggle("square");
+    }
+
+    function parpadeo() {
+        setInterval(cambio, 1000);
+    }
+
+
+</script>
+</body>
+
+</html>
